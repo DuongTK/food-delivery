@@ -7,9 +7,9 @@ import (
 )
 
 func initDataUrls(length int) []string {
-	sliceUrls := make([]string, 0)
+	sliceUrls := make([]string, length)
 	for i := 0; i < length; i++ {
-		sliceUrls = append(sliceUrls, "data url "+strconv.Itoa(i))
+		sliceUrls[i] = "data url " + strconv.Itoa(i)
 	}
 	return sliceUrls
 }
